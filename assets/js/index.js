@@ -74,40 +74,51 @@ function shiftPractice(arr) {
 function popPractice(arr) {
   return arr.pop();
 }
+// Дан массив [1, 2, 3, 4, 5]. С помощью метода slice запишите в новый элементы [1, 2, 3].
 function sliceFirstPractice(arr) {
   return arr.slice(0, 3);
 }
+// Дан массив [1, 2, 3, 4, 5]. С помощью метода slice запишите в новый элементы [4, 5].
 function sliceSecondPractice(arr) {
   return arr.slice(3);
 }
+// Дан массив [1, 2, 3, 4, 5]. С помощью метода splice преобразуйте массив в [1, 4, 5].
 function spliceFirstPractice(arr) {
   arr.splice(1, 2);
   return arr;
 }
+//Дан массив [1, 2, 3, 4, 5]. С помощью метода splice запишите в новый массив элементы [2, 3, 4].
 function spliceSecondPractice(arr) {
   arr.splice(0, 1);
   arr.splice(-1, 1);
   return arr;
 }
+//Дан массив [1, 2, 3, 4, 5]. С помощью метода splice сделайте из него массив [1, 2, 3, 'a', 'b', 'c', 4, 5].
 function spliceThirdPractice(arr) {
   arr.splice(3, 0, "a", "b", "c");
   return arr;
 }
+//Дан массив [1, 2, 3, 4, 5]. С помощью метода splice сделайте из него массив [1, 'a', 'b', 2, 3, 4, 'c', 5, 'e'].
 function spliceFourthPractice(arr) {
   arr.splice(1, 0, "a", "b");
   arr.splice(6, 0, "c");
   arr.splice(8, 0, "e");
   return arr;
 }
+//Дан массив [3, 4, 1, 2, 7]. Отсортируйте его.
 function sortPractice(arr) {
   return arr.sort();
 }
+// Дан объект {js:'test', jq: 'hello', css: 'world'}. Получите массив его ключей.
 function keysPractice(obj) {
   return Object.keys(obj);
 }
+//необходимо создать функцию hasElem, которая параметрами будет принимать массив и строку, и возвращать true, если строка есть в массиве, и false - если нет
+//Дан массив с числами. Проверьте, что в этом массиве есть указанное число. Если есть - вернуть true, а если нет - вернуть false.
 function hasElem(arr, str) {
   return arr.includes(str);
 }
+//Дан массив с числами. Проверьте, есть ли в нем два одинаковых числа подряд. Если есть -  вернуть true, а если нет - вернуть false.
 function twoSameNumberInRow(arr) {
   let num = arr[0];
   for (let i = 1; i < arr.length; i++) {
