@@ -75,11 +75,11 @@ function popPractice(arr) {
   return arr.pop();
 }
 function sliceFirstPractice(arr) {
-  arr.slice(0, 3);
-  return arr;
+  return arr.slice(0, 3);
 }
-function sliceSecondPractice(arr) {}
-
+function sliceSecondPractice(arr) {
+  return arr.slice(3);
+}
 function spliceFirstPractice(arr) {
   arr.splice(1, 2);
   return arr;
